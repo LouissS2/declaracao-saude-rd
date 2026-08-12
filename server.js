@@ -109,7 +109,7 @@ app.post('/declaracao-saude', async (req, res) => {
 
 
 /* PORTA DO SERVIDOR */
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 
 app.listen(PORT, () => {
